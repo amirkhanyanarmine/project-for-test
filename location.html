@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mirralise</title>
+	<link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<a href="index.html"><img class="graficlogo" src="img/logo.png" alt="Logo"></a>
+		</div>	
+		<nav>
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">HOME</a>
+				<a href="project.html">PROJECT</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="location.html">LOCATION</a>
+				<a id="menu" href="#" class="icon">&#9776;</a>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<h1>Location</h1>
+		<div id="map">
+			
+		</div>
+	</main>
+	<footer>
+				<nav>
+			<a href="index.html">HOME</a>
+				<a href="project.htm">PROJECT</a>
+				<a href="blog.html">BLOG</a>
+				<a href="contact.html">CONTACT</a>
+				<a href="about.html">ABOUT</a>
+				<a href="services.html">SERVICES</a>
+				<a href="location.html">LOCATION</a>
+		</nav>
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png" class="graficlogo"></a>
+		</div>
+		<div class="social">
+			<a href="#"><img src="img/soc.icons/em.png"></a>
+			<a href="#"><img src="img/soc.icons/face.png"></a>
+			<a href="#"><img src="img/soc.icons/goo.png"></a>
+			<a href="#"><img src="img/soc.icons/inst.png"></a>
+			<a href="#"><img src="img/soc.icons/pint.png"></a>
+		</div>
+		<p>By my company</p>
+	</footer>
+
+
+	<script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 40.153306, lng: 44.348483 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 11,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNZa22qMx0cLqHtjIZLxpoNckaQeUy8uU&callback=initMap&libraries=&v=weekly"
+      async defer
+    ></script>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
